@@ -9,7 +9,7 @@ class ProductManager {
       // verifico si existe un producto con el mismo código en el arreglo
       let existingProduct = this.products.find(p => p.code === code);
       if (existingProduct) {
-        throw new Error('Este producto ya existe');
+        console.error('Este producto ya existe');
       }
   
       // agregoel producto al arreglo
